@@ -25,7 +25,12 @@ allure {
 }
 
 test {
-    useTestNG()
+    useTestNG(){
+        options {
+            parallel = 'methods'
+            threadCount = 4
+        }
+    }
     systemProperties System.getProperties()
 }
 

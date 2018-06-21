@@ -1,3 +1,3 @@
 # GistTests
 
-How to run: gradlew clean test allureReport -Dtoken="TOKEN"
+How to run: gradlew clean test -Dtoken="TOKEN" && gradlew allureReport
