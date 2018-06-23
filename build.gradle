@@ -43,6 +43,7 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib"
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     testCompile "io.rest-assured:rest-assured:3.0.7"
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.10.0'
     compile "io.qameta.allure:allure-rest-assured:$allure_version"
 }
 
