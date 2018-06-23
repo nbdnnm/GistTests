@@ -9,8 +9,8 @@ Project created in Kotlin, with gradle, rest assured, testNG, allure report and 
 After allureReport will be generated in ./build/reports/allure-report (better open in Firefox)
 Suites has tests results
 
-!(./Suites.bmp)
+![](Suites.bmp)
 
 Timeline shows how it was run in parallel
 
-!(Timeline.bmp)
+![](Timeline.bmp)
