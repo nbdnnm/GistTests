@@ -1,7 +1,8 @@
-
 buildscript {
     ext.kotlin_version = '1.2.31'
     ext.allure_version = '2.6.0'
+    ext.assertj_version = '3.10.0'
+    ext.rest_assured_version = '3.0.7'
 
     repositories {
         mavenCentral()
@@ -25,7 +26,7 @@ allure {
 }
 
 test {
-    useTestNG(){
+    useTestNG() {
         options {
             parallel = 'methods'
             threadCount = 4
@@ -42,9 +43,9 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib"
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    testCompile "io.rest-assured:rest-assured:3.0.7"
-    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.10.0'
-    compile "io.qameta.allure:allure-rest-assured:$allure_version"
+    testCompile "io.rest-assured:rest-assured:$rest_assured_version"
+    testCompile "org.assertj:assertj-core:$assertj_version"
+    testCompile "io.qameta.allure:allure-rest-assured:$allure_version"
 }
 
 apply plugin: 'kotlin'
