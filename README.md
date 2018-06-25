@@ -4,7 +4,7 @@ Github gists api tests
 
 How to run: gradlew clean test -Dtoken="GITHUB_TOKEN" && gradlew allureReport
 
-Add -Duser if you plan to enable Remove all gists afterClass method
+Add -Duser="GITHUB_USERNAME" if you plan to enable Remove all gists afterClass method
 
 Project created in Kotlin, with gradle, rest assured, testNG, allure report and assertJ
 
