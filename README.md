@@ -1,4 +1,5 @@
 # GistTests
+[![Build Status](https://travis-ci.com/nbdnnm/GistTests.svg?branch=master)](https://travis-ci.com/nbdnnm/GistTests)
 
 Github gists api tests
 

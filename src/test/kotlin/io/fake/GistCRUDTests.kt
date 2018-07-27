@@ -111,7 +111,7 @@ class GistCRUDTests {
     }
 
     //enable if you want to clean up gists
-    @AfterClass(enabled = false)
+    @AfterClass(enabled = true)
     fun `Remove all gists`() {
         do {
             val result = get("/users/" + getProperty("user") + "/gists")
