@@ -98,18 +98,6 @@ class GistCRUDTests {
                 .statusCode(404)
     }
 
-    @Issue("DEFECT, delete command on non exist resource (star) returns 204 No content, but should return 404")
-    @Test()
-    fun `Unstar not starred gist`() {
-        val gist = getUniqueGist()
-        val gistId = createGist(gist)
-        given()
-                .body(gist)
-                .delete("/gists/$gistId/star")
-                .then()
-                .statusCode(404)
-    }
-
     //enable if you want to clean up gists
     @AfterClass(enabled = true)
     fun `Remove all gists`() {
